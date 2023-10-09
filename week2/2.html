@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>설문 조사</title>
+</head>
+
+<body>
+    <h2>이 설문조사는 비공개로 이루어집니다.</h2>
+    <form action="http://218.144.127.125/submit" method="post">
+        <label for="name">이름 : </label> <input type="text" name="name">
+
+        <p><label for="like">저를 아시나요?</label></p>
+        <input type="radio" name="like" value="yes"> <label for="name"> 네</label>
+
+        <input type="radio" name="like" value="no"> <label for="name"> 아니오</label>
+        <p>저에 대해서 느낀 점을 서술해 주세요.</p>
+        <textarea name="feels" id="feels" cols="30" rows="10"></textarea>
+        <button type="submit">제출</button>
+    </form>
+</body>
+
+</html>
