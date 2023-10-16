@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>김동주 vs 안우진</title>
+</head>
+<style>
+    * {
+        text-align: center;
+    }
+
+    body {
+        background-color: beige;
+    }
+
+    .theme {
+        text-align: center;
+        position: fixed;
+        display: block;
+        background-color: skyblue;
+        border: solid blue;
+        right: 0;
+        left: 0;
+        top: 0;
+    }
+
+    .theme h1,
+    .theme h2 {
+        text-shadow: gray 0 -2px;
+    }
+
+    .lineup {
+        padding-top: 9em;
+        padding-left: 10em;
+        padding-right: 10em;
+    }
+
+    .lineup * {
+        display: inline;
+    }
+
+    .kiwoom_lineup {
+        background-color: chocolate;
+        float: left;
+    }
+
+    .doosan_lineup {
+        background-color: aqua;
+        float: right;
+    }
+
+    .description {
+        display: block;
+        position: static;
+        padding-top: 5em;
+        text-align: center;
+    }
+
+    #predict_button {
+        width: 20em;
+        height: 5em;
+    }
+
+    #ps {
+        position: absolute;
+        font-size: 5em;
+    }
+
+    #predict_result {
+        visibility: hidden;
+        font-size: 2em;
+    }
+</style>
+<script>
+    function prediction() {
+        el = document.getElementById('predict_result');
+        el.style.visibility = "visible";
+    }
+</script>
+
+<body>
+    <div class="theme">
+        <h1>2023 신한은행 KBO 프로야구</h1>
+        <h2>4월 13일 18:30 잠실야구장</h2>
+    </div>
+    <div class="lineup">
+        <div class="kiwoom_lineup">
+            <h1>키움 히어로즈</h1>
+            <br>
+            <br>
+            <h2>8위 3승 0무 6패</h2>
+            <br>
+            <br>
+            <h2>안우진(1패)</h2>
+            <br>
+            <img src="https://sports-phinf.pstatic.net/player/kbo/default/68341.png?type=w150">
+
+        </div>
+        <div class="versus">
+            <h1>VS</h1>
+        </div>
+        <div class="doosan_lineup">
+            <h1>두산 베어스</h1>
+            <br>
+            <br>
+            <h2>4위 6승 0무 3패</h2>
+            <br>
+            <br>
+            <h2>김동주(1승)</h2>
+            <br>
+            <img src="https://sports-phinf.pstatic.net/player/kbo/default/51230.png?type=w150">
+        </div>
+    </div>
+
+    <p class="description">악마의 재능 안우진과 <br> 슈퍼 루키 김동주의 대결<br>누가 이길지 기대가 되네요.
+    </p>
+
+    <button id="predict_button" onclick="prediction()">예측 결과 보기</button>
+    <p id="predict_result">김동주가 질 것 같아요!!</p>
+    <p id="ps">어떤 결과가 나올지<br> 정말 기대가 되는군요!</p>
+    <a href="https://m.sports.naver.com/game/20230413WOOB02023/relay">중계 바로가기</a>
+
+</body>
+
+</html>
+<!--
+    조건 1. 40번째 줄, 54번째 줄
+    조건 2. 22번째 줄, 30번째 줄
+    조건 3. 19번째 줄, 66번째 줄
+    조건 4. 71번째 줄
+-->
